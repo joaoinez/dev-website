@@ -1,0 +1,20 @@
+{
+  "Hero": {
+    "text1": "Hey 👋 I'm ",
+    "text2": "João Inez",
+    "text3": ". I craft bold digital experiences that make businesses stand out. Your website should be as unique as your vision — and I'm here to make that happen.",
+    "subtext1": "Ready to build something ",
+    "subtext2": "exceptional",
+    "connect": "Let's connect"
+  },
+  "Projects": {
+    "title": "Work",
+    "constroiwood": "A bespoke carpentry contractor for private projects.",
+    "analoguecode": "Digital agency I co-founded that focuses on delivering quality software."
+  },
+  "Footer": {
+    "marquee": "HIRE ME",
+    "text1": "Ready to ",
+    "text2": "launch"
+  }
+}

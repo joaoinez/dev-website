@@ -1,0 +1,20 @@
+{
+  "Hero": {
+    "text1": "Olá 👋 Chamo-me ",
+    "text2": "João Inez",
+    "text3": ". Eu crio experiências digitais ousadas que fazem com que empresas se destaquem. O seu website deve ser tão único como a sua visão — e eu estou aqui para tornar isso uma realidade.",
+    "subtext1": "Pronto para construir algo ",
+    "subtext2": "excecional",
+    "connect": "Vamos falar"
+  },
+  "Projects": {
+    "title": "Portfólio",
+    "constroiwood": "Empresa de carpintaria personalizada para projetos particulares.",
+    "analoguecode": "Agência digital que co-fundei, especializada em desenvolver software de qualidade."
+  },
+  "Footer": {
+    "marquee": "CONTRATE-ME",
+    "text1": "Pronto para ",
+    "text2": "começar"
+  }
+}
