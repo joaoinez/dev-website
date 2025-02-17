@@ -25,13 +25,13 @@ export default function Project({
   desc,
 }: Props) {
   return (
-    <div className={cn("mb-24", className)}>
+    <div className={cn("mb-24 md:mb-36", className)}>
       <div>
         <a
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="block hover:cursor-pointer peer"
+          className="peer block hover:cursor-pointer"
         >
           <Cursor
             attachToParent
@@ -74,7 +74,7 @@ export default function Project({
               hidden: { opacity: 0, y: 50, filter: "blur(4px)" },
               visible: { opacity: 1, y: 0, filter: "blur(0px)" },
             }}
-            viewOptions={{ margin: "0px 0px -200px 0px" }}
+            viewOptions={{ margin: "0px 0px -100px 0px" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <Image src={src} alt={alt} className="mb-2" />
@@ -83,14 +83,19 @@ export default function Project({
             as="h3"
             animation="blurInUp"
             by="character"
-            className="text-3xl"
+            className="text-xl font-bold md:text-2xl md:font-normal lg:text-3xl"
           >
             {title}
           </TextAnimate>
         </a>
-        <p className="opacity-0 peer-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+        <TextAnimate
+          as="p"
+          animation="blurInUp"
+          by="word"
+          className="pointer-events-none xl:opacity-0 xl:transition-opacity xl:duration-200 xl:peer-hover:opacity-100"
+        >
           {desc}
-        </p>
+        </TextAnimate>
       </div>
     </div>
   );

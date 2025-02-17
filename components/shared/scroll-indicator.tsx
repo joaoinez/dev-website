@@ -23,14 +23,17 @@ export const ScrollIndicator = () => {
   return (
     <div
       className={cn(
-        `absolute bottom-12 left-1/2 -translate-x-1/2 transition-opacity duration-200 w-5 h-8 rounded-full border border-muted-foreground/30 flex items-center justify-center`,
-        isAtTop ? "opacity-100" : "opacity-0",
+        `absolute bottom-12 left-1/2 flex h-8 w-5 -translate-x-1/2 items-center
+        justify-center rounded-full border border-muted-foreground/30
+        transition-opacity duration-200`,
+        isAtTop ? "opacity-100" : "opacity-0"
       )}
     >
       <div
         className={cn(
-          `w-2 h-2 rounded-full bg-foreground/70 animate-[circle-scroll_1.8s_ease-in-out]`,
-          isAtTop && "repeat-infinite",
+          `h-2 w-2 animate-[circle-scroll-mobile_1.8s_ease-in-out] rounded-full
+          bg-foreground/70 xl:animate-[circle-scroll-desktop_1.8s_ease-in-out]`,
+          isAtTop && "repeat-infinite xl:repeat-infinite"
         )}
       />
     </div>
