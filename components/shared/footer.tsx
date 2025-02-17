@@ -17,6 +17,10 @@ export default function Footer() {
           </a>
           ?
         </h1>
+        <div className="absolute bottom-4 left-4">
+          <p>(joaoinez.info@gmail.com)</p>
+          <p>(+351 913244408)</p>
+        </div>
         <Particles
           className="absolute inset-0 z-0"
           quantity={100}
