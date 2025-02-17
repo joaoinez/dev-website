@@ -11,7 +11,7 @@ export default function ProjectsSection() {
   const t = useTranslations("Projects");
 
   return (
-    <div className="relative p-4 md:p-8 lg:p-12">
+    <section className="relative p-4 md:p-8 lg:p-12">
       <DotPattern
         className={cn(
           "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]"
@@ -50,6 +50,6 @@ export default function ProjectsSection() {
         title="The Analogue Code Company"
         desc={t("analoguecode")}
       />
-    </div>
+    </section>
   );
 }

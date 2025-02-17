@@ -4,10 +4,10 @@ import ProjectsSection from "@/components/shared/projects-section";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <ProjectsSection />
       <Footer />
-    </>
+    </main>
   );
 }

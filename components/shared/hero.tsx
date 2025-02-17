@@ -10,7 +10,7 @@ export default function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <div className="relative flex h-screen items-start bg-[url(/gradient.png)] bg-cover bg-[center_right_-70vh] bg-no-repeat p-4 pt-8 md:bg-[center_right_-50vh] md:p-8 md:pt-12 lg:p-12 xl:items-center xl:bg-contain xl:bg-[center_right_-30vh] xl:p-24">
+    <section className="relative flex h-screen items-start bg-[url(/gradient.png)] bg-cover bg-[center_right_-70vh] bg-no-repeat p-4 pt-8 md:bg-[center_right_-50vh] md:p-8 md:pt-12 lg:p-12 xl:items-center xl:bg-contain xl:bg-[center_right_-30vh] xl:p-24">
       <div className="md:w-3/4 lg:w-2/3 xl:w-[55%]">
         <h1 className="mb-4 text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           {t("text1")}
@@ -31,6 +31,6 @@ export default function Hero() {
           </InteractiveHoverButton>
         </Magnetic>
       </div>
-    </div>
+    </section>
   );
 }
