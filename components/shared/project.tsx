@@ -1,4 +1,5 @@
 "use client";
+
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { Cursor } from "@/components/ui/cursor";
 import { InView } from "@/components/ui/in-view";

@@ -20,8 +20,50 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Joao Inez - Portfolio",
-  description: "Building your online presence",
+  title: "João Inez - Freelance Web Developer",
+  description:
+    "I craft bold digital experiences that make businesses stand out. Your website should be as unique as your vision — and I'm here to make that happen. Ready to build something exceptional?",
+  keywords: [
+    "freelance web developer",
+    "web development",
+    "frontend developer",
+    "react developer",
+    "responsive design",
+    "digital experiences",
+    "bold websites",
+    "custom web solutions",
+  ],
+  authors: [{ name: "João Inez" }],
+  creator: "João Inez",
+  publisher: "João Inez",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://dev.joaoinez.me",
+    title: "João Inez - Freelance Web Developer",
+    description:
+      "I craft bold digital experiences that make businesses stand out. Your website should be as unique as your vision — and I'm here to make that happen.",
+    siteName: "João Inez Portfolio",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Scatterhead Comics",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 
 export default async function RootLayout({
@@ -33,14 +75,11 @@ export default async function RootLayout({
 }>) {
   const locale = (await params).locale;
 
-  // Ensure that the incoming `locale` is valid
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
