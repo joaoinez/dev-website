@@ -3,8 +3,8 @@ import { DotPattern } from "@/components/magicui/dot-pattern";
 import Project from "@/components/shared/project";
 import { InView } from "@/components/ui/in-view";
 import { cn } from "@/lib/utils";
-import analogueCode from "@/public/analogue-code.png";
-import constroiWood from "@/public/constroi-wood.png";
+import analogueCode from "@/public/images/analogue-code.png";
+import constroiWood from "@/public/images/constroi-wood.png";
 import { useTranslations } from "next-intl";
 
 export default function ProjectsSection() {
