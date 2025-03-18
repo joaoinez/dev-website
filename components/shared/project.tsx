@@ -78,7 +78,7 @@ export default function Project({
             viewOptions={{ margin: "0px 0px -100px 0px" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <Image src={src} alt={alt} className="mb-2" />
+            <Image src={src} alt={alt} className="mb-2" placeholder="blur" />
           </InView>
           <TextAnimate
             as="h3"
