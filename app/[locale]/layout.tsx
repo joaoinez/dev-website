@@ -1,4 +1,5 @@
 import { routing } from "@/i18n/routing";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -87,6 +88,7 @@ export default async function RootLayout({
       <body className={`${satoshi.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
