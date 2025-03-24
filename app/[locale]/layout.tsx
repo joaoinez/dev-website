@@ -1,6 +1,6 @@
 import { routing } from "@/i18n/routing";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import localFont from "next/font/local";
@@ -31,8 +31,10 @@ export const metadata: Metadata = {
     "react developer",
     "responsive design",
     "digital experiences",
-    "bold websites",
+    "custom websites",
     "custom web solutions",
+    "website creation",
+    "website design",
   ],
   authors: [{ name: "João Inez" }],
   creator: "João Inez",
@@ -61,10 +63,12 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#ffffff",
 };
 
 export default async function RootLayout({
