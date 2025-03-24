@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   title: "João Inez - Freelance Web Developer",
   description:
     "I craft bold digital experiences that make businesses stand out. Your website should be as unique as your vision — and I'm here to make that happen. Ready to build something exceptional?",
+  metadataBase: new URL("https://dev.joaoinez.me"),
   keywords: [
     "freelance web developer",
     "web development",
