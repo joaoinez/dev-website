@@ -26,4 +26,10 @@
     // see https://opennext.js.org/cloudflare/howtos/image
     "binding": "IMAGES",
   },
+  "routes": [
+    {
+      "pattern": "dev.joaoinez.me",
+      "custom_domain": true,
+    },
+  ],
 }
